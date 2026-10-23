@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro de Estudiantes</title>
+    <link rel="stylesheet" href="notas.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <div class="titulo-principal">SISTEMA DE REGISTRO DE ESTUDIANTES</div>
+
+        <div class="formulario-card">
+            <h2>REGISTRO Y<br>EVALUACION</h2>
+
+            <div class="campo">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre">
+            </div>
+
+            <!-- Nuevo campo de Edad -->
+            <div class="campo">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" min="5" max="100">
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo">
+            </div>
+
+            <div class="campo">
+                <label for="nota">Nota</label>
+                <input type="number" id="nota" min="0" max="100">
+            </div>
+
+            <button type="button" class="btn-evaluar" onclick="registrarEstudiante()">
+                Evaluar<br>Estudiante
+            </button>
+        </div>
+
+        <div class="contenedor-tarjetas" id="contenedorTarjetas"></div>
+    </div>
+
+    <script src="notas.js"></script>
+
+</body>
+</html>
